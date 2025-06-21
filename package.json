@@ -1,10 +1,9 @@
 {
   "name": "nodejs",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "Script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon Script"
+    "start": "node Script.js"
   },
   "keywords": [],
   "author": "",
