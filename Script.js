@@ -12,8 +12,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-mongoose.connect("mongodb://localhost:27017/facebook")
-  .then(() => console.log("MongoDB connected to 'facebook'"))
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("Connection error:", err));
 
 app.post("/sign", async (req, res) => {
